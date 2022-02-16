@@ -11,11 +11,13 @@ Option Compare Text
 Module HW8_MP_ConverAndValidate
 
     Sub Main()
+        'Dim your varibles
         Dim convertNumber As Integer
         Dim userInput As String
         Dim validConversion As Boolean = False
 
         Console.WriteLine("Enter a integer value.")
+        'Will loop until a conversion is made successfully
         Do Until validConversion
 
             userInput = Console.ReadLine()
@@ -32,7 +34,6 @@ Module HW8_MP_ConverAndValidate
     End Sub
 
     Function ConversionAttempt(ByVal stringValue As String, ByRef j As Integer) As Boolean
-
         Dim Valid As Boolean
         Try
             Valid = True
